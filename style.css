@@ -76,7 +76,7 @@ Sets up styles for sidebar / navigation containers
   */
   
   .section-logo {
-    max-width: 290px;
+    max-width: 90%;
     padding: 10px;
   }
   
@@ -309,7 +309,7 @@ Sets up styles for sidebar / navigation containers
   .social-icons i {
     font-size: 48px;
     color: black;
-    padding: 5px;
+    padding: 10px;
   }
   
   .social-icons i:hover {
@@ -329,7 +329,7 @@ Sets up styles for sidebar / navigation containers
   
   img {
     padding: 10px;
-    max-width: 300px;
+    max-width: 250px;
     justify-content: flex-start;
   }
   
@@ -371,9 +371,10 @@ Sets up styles for .content-container
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: none;
+  flex-wrap: wrap;
   margin-top: 15px;
   margin-bottom: 15px;
+}
 
 
 /* Sets row behavior using flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
