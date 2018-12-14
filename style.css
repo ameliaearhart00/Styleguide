@@ -1,6 +1,9 @@
+
 /* 
 ====================================
-Sets up styles for .sidebar-container 
+CSS for:
+The Department of the Interior
+Style Guide 
 ====================================
 */
 
@@ -13,13 +16,12 @@ Sets up styles for sidebar / navigation containers
 
 .sidebar-container {
     background: #4D90CD;
+    color: white;
     height: 100%;
     position: fixed;
     padding: 60px;
     width: 180px; height: 100%;
     position: fixed;
-    padding: 60px;
-    width: 180px;
   }
   
   
@@ -28,8 +30,17 @@ Sets up styles for sidebar / navigation containers
     align: center;
   }
   
+  nav p {
+    color: white;
+    width: 180px
+  }
+
+  nav h4 {
+    color: white;
+    width: 180px
+  }
+
   nav a {
-    background: yellow;
     width: 100%;
     padding: 10px 10px;
     display: flex;
@@ -37,20 +48,25 @@ Sets up styles for sidebar / navigation containers
     align-content: center;
     height: 10px;
     margin: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;  
   }
   
   a {
-    /* hint: use the color property */
+    color: lightblue;
   }
   
   /* this pseudo class will change the link tag <a> color when you hover on it */
   a:hover {
-    /* hint: use the color property */
+    color: lightblue;
   }
+
+  a:active {
+    color: yellow;
+  }
+
   
   .center p {
-    /* hint: use the text align property */
+    text-align: center;
   }
   
   /* 
@@ -60,117 +76,167 @@ Sets up styles for sidebar / navigation containers
   */
   
   .section-logo {
-    /* hint: use the width property */
-    /* hint: use the height property */
+    max-width: 290px;
+    padding: 10px;
   }
   
+
+
   /* 
   ===========================
   Sets up styles for typography 
   ============================
   */
   
-  /* Sets up font-face for body copy */ 
+  /* Sets up font-face and font-size for body copy */ 
   body {
-    /* hint: use the font-family property */
-    /* hint: use the color property */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #2C2B25;
   }
   
-  /* Sets up font-face for headers */ 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    /* hint: use the font-family property */
-    /* hint: use the color property */
-    /* hint: use the line-height property */
+  /* Sets up font-face and font-size for paragraph text */
+  p {
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 18px;
+    color: #2C2B25;
   }
-  
-  /* Sets up font-weights for headers */ 
+
+  /* Sets up font-face and font-size for headers */ 
   h1 {
-    /* hint: use the font-weight property */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 48px;
+    color: #2C2B25;
+  }
+
+  h2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 36px;
+      color: #2C2B25;
+  }
+
+  h3 {
+      font-family: 'Raleway Semi-Bold', sans-serif;
+      font-size: 36px;
+      color: #2C2B25;
   }
   
-  h2,
-  h3,
-  h4,
-  h5,
+  h4 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 30px;
+      color: #2C2B25;
+  }
+
+  h5 {
+      font-family: 'Raleway Semi-Bold', sans-serif;
+      font-size: 24px;
+      color: #2C2B25;
+  }
+
   h6 {
-    /* hint: use the font-weight property */
-  
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 24px;
+      font-weight: ;
+      color: #2C2B25;
+      line-height: 20px;
   }
+  
+
   
   /* adds 40px of margin to the top */
   .type-styles {
-    /* hint: use the margin-top property */
+    margin-top: 40px;
   }
   
   /* adds 40px of margin to the top */
   .type-faces {
-    /* hint: use the margin-top property */
+    margin-top: 40px;
   }
   
   .type-faces-01 {
-    /* hint: use the font-family property */
+    margin-top: 40px;
+    font-family: Ubuntu;
   }
   
   .type-faces-02 {    
-    /* hint: use the font-family property */
+    margin-top: 40px;
+    font-family: Raleway Semi-Bold;
+  }
+
+  .type-faces-03 {    
+    margin-top: 40px;
+    font-family: Open Sans Light;
   }
   
+
+
+
   /* 
   ==========================
   Sets up styles for colors 
   ===========================
   */
   
-  /* Makes a circle shape to serve a color box */ 
-  .color-shape {
-    /* display: block;
+  /* Makes a rounded square shape to serve a color box */ 
+  .color-shape-primary {
+    display: block;
     text-align: center;
     width: 6em;
     height: 6em;
-    border-radius: 50%;
+    border-radius: 10%;
     margin: 0.5em;
     border: 1px solid white;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.4); */
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
   }
+  .color-shape-secondary {
+    display: block;
+    text-align: center;
+    width: 6em;
+    height: 6em;
+    border-radius: 10%;
+    margin: 0.5em;
+    border: 1px solid white;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+  }
+
   
   /* Makes colors */ 
-  .color-red {
-    /* background: red; */
+  .color-primary1 {
+    background: #A2DAE8;
   }
   
-  .color-orange {
-    /* background: orange; */
+  .color-primary2 {
+    background: #295C69;
   }
   
-  .color-yellow {
-    /* background: yellow; */
+  .color-secondary1 {
+    background: #2C3B25;
   }
   
-  .color-green {
-    /* background: green; */
+  .color-secondary2 {
+    background: #2C2B25;
   }
   
-  .color-blue {
-    /* background: blue; */
+  .color-secondary3 {
+    background: #5ED0EC;
   }
   
-  .color-purple {
-    /* background: indigo; */
+  .color-secondary4 {
+    background: #F3F7FB;
   }
   
-  .color-black {
-    /* background: black; */
+  .color-secondary5 {
+    background: #B4D2EE;
   }
   
-  .color-gray {
-    /* background: gray; */
+  .color-secondary6 {
+    background: #4D90CD;
   }
   
+
+
+
+
   /* 
   ===========================
   Sets up styles for button 
@@ -178,80 +244,93 @@ Sets up styles for sidebar / navigation containers
   */
   
   .button button {
-    /* hint: use the height property */
-    /* hint: use the width property */ 
-    /* hint: use the border-radius property */  
-    /* hint: use the padding property */  
-    /* hint: use the margin property */  
-    /* hint: use the font-family property */  
-    /* hint: use the font-weight property */
+    height: 48px;
+    width: 215px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    font-family: Ubuntu;
+    font-weight: Regular;
+    font-size: 18px;
   }
   
   .button-normal {
-    /* hint: use the background property */
-    /* hint: use the color property */
+    background: #F3F7FB;
+    color: #2C2B25;
   }
   
   .button-hover {
-    /* hint: use the background property */
-    /* hint: use the color property */
-  
+    background: #5ED0EC;
+    color: white;
   }
   
   .button-pressed,
   .button-loading {
-    /* hint: use the background property */
-    /* hint: use the color property */
+    background: #B4D2EE;
+    color: #2C2B25;
   }
   
   .button-disabled {
-     /* hint: use the background property */
-    /* hint: use the color property */
+    background: white;
+    color: gray;
+    border: gray;
   }
   
+
+
   /* 
   ==========================
   Sets up styles for icons 
   ===========================
   */
   
-  /* TO ADD FONT AWESOME ICONS GO TO THIS LINK AND COPY THE CSS LINK
-  https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
-  */
+
   
   /* DOI iconography */
-  .doi-icons i {
-    /* hint: use the margin-top property */
-    /* hint: use the font-size property */  
-    /* hint: use the color property */
+  .doi-icons img {
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    justify-content: flex-start;
   }
   
   .svg-icons img {
-    /* hint: use the margin-top property */
-    /* hint: use the width property */  
-    /* hint: use the height property */
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    justify-content: flex-start;
   }
   
+
+
   /* footer iconography */
   .social-icons i {
-    /* hint: use the font-size property */
-    /* hint: use the color property */
+    font-size: 48px;
+    color: black;
+    padding: 5px;
   }
   
   .social-icons i:hover {
-    /* hint: use the color property */
-  
+    color: #5ED0EC;
   }
   
+
+
+
   /* 
   ===========================
   Sets up styles for images 
   ============================
   */
   
-  #Imagery img {
-    /* hint: use the padding property */
+  #Imagery 
   
+  img {
+    padding: 10px;
+    max-width: 300px;
+    justify-content: flex-start;
   }
   
   /* 
@@ -259,18 +338,12 @@ Sets up styles for sidebar / navigation containers
   Sets up styles for articles
   ====================================
   */
-  article {
+  /* article {
+
    
-  }
-
-/* Colors: */
+  } */
 
 
-  
-nav a,
-nav h2 {
-
-}
 
 /* 
 ====================================
@@ -280,23 +353,31 @@ Sets up styles for .content-container
 
 /* Positions section container in relation to .sidebar-container */
 .section-container {
-        background: yellow;
-        margin-top: 40px;
+        background: white;
+        margin-top: 10px;
         margin-left: 290px;
         padding: 30px 30px;
         height: 100%;
-  
 }
 
 /* Sets max width for content and align content in middle of section-container */
 .content-container {
-    background: lightskyblue;
+    background: white;
     margin: 0 auto;
     max-width: 850px;
 }
 
+.row-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+
 /* Sets row behavior using flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-.row-container-no-wrap {
+/* .row-container-no-wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -304,18 +385,10 @@ Sets up styles for .content-container
     margin-top: 15px;
     margin-bottom: 15px;
   
-}
+} */
 
-.row-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
 
-.row-container-around {
+/* .row-container-around {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -329,7 +402,7 @@ Sets up styles for .content-container
     height: 100px;
     width: 100px;
     background: yellow;
-}
+} */
 
 /* 
 ====================================
@@ -340,7 +413,6 @@ BONUS: Sets up styles for mobile breakpoint
 /* Hides mobile navigation on desktop */
 .mobile-nav {
     display: none;
-   
 }
 
 /* Sets media query for screens below 450px wide */
@@ -372,7 +444,6 @@ BONUS: Sets up styles for mobile breakpoint
     /* Hides Sidebar on mobile */
     .sidebar-container {
         display: none;
-       
     }
   
     /* Defines mobile container content */
@@ -380,9 +451,7 @@ BONUS: Sets up styles for mobile breakpoint
         background: lightblue;
         margin-top: 60px;
         margin-left: 0px;
-        height: 100%;
-
-      
+        height: 100%;      
     }
 
     /* Sets Type Styles */
@@ -392,13 +461,13 @@ BONUS: Sets up styles for mobile breakpoint
     }
 
 
-    .row-container-no-wrap {
+    /* .row-container-no-wrap {
       
     }
 
     #Logo .section-logo {
        
-    }
+    } */
 
 
 }
@@ -409,6 +478,6 @@ BONUS: Sets up css code snippet styles
 ====================================
 */
 
-pre {
+/* pre {
 
-}
+} */
